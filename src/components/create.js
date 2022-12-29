@@ -20,7 +20,7 @@ export default function Create() {
 
     const newPerson = { ...form };
 
-    await fetch("http://54.210.130.231:5000/record/add", {
+    await fetch("http://44.210.115.195:5000/record/add", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
