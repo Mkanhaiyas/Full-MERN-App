@@ -29,7 +29,7 @@ export default function RecordList() {
 
   useEffect(() => {
     async function getRecords() {
-      const response = await fetch(`http://44.210.115.195:5000/record/`);
+      const response = await fetch(`http://54.82.250.58:5000/record/`);
 
       if (!response.ok) {
         const message = `An error occurred: ${response.statusText}`;
@@ -47,7 +47,7 @@ export default function RecordList() {
   }, [records.length]);
 
   async function deleteRecord(id) {
-    await fetch(`http://44.210.115.195:5000/${id}`, {
+    await fetch(`http://54.82.250.58:5000/${id}`, {
       method: "DELETE",
     });
 
